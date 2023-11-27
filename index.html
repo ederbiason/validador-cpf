@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de CPF</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/874.png" class="imagem" alt="">
+
+        <div class="main"">
+            <div class="card">
+                <h1>
+                    Verificador de CPF
+                </h1>
+                <p>Insira os nove primeiros dígitos do CPF para o programa calcular os dígitos verificadores.</p>
+                <div class="input">
+                    <label for="cpfInput">CPF</label>
+                    <input type="text" id="cpfInput" placeholder="Insira os 9 primeiros dígitos do CPF.">
+                </div>
+                <button onclick="calcularVerificadores()">
+                    Verificar
+                </button>
+            </div>
+            <div class="card-2">
+                <h1>
+                    Resultado
+                </h1>
+                <p>
+                    Os dígitos verificadores do CPF informado é:
+                </p>
+                <div class="resultado">
+                    <h1 id="resultado"></h1>
+                </div>
+                <div class="completo">
+                    <p>CPF completo: </p>
+                    <p id="completo"></p>
+                </div>
+            </div>
+        </div>
+
+        <img src="https://avatars.githubusercontent.com/u/10983643?s=280&v=4" class="imagem" alt="">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
